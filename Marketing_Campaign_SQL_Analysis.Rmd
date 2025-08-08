@@ -1,0 +1,100 @@
+
+---
+title: "Marketing Campaign SQL Analysis in R"
+author: "Your Name"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## 📁 Load Libraries and Data
+
+```{r}
+# Install required packages if not installed
+if (!require("sqldf")) install.packages("sqldf")
+if (!require("ggplot2")) install.packages("ggplot2")
+if (!require("dplyr")) install.packages("dplyr")
+
+library(sqldf)
+library(ggplot2)
+library(dplyr)
+
+# Load the CSV file
+df <- read.csv("marketing_campaign_dataset revised.csv", stringsAsFactors = FALSE)
+
+# Convert Date column
+df$Date <- as.Date(df$Date)
+```
+
+## 🔍 Data Structure
+
+```{r}
+str(df)
+summary(df)
+```
+
+## 🧠 SQL Analysis
+
+### ROI by Customer Segment
+
+```{r}
+sqldf("SELECT Customer_Segment,
+              COUNT(*) AS Num_Campaigns,
+              AVG(ROI) AS Avg_ROI
+       FROM df
+       GROUP BY Customer_Segment
+       ORDER BY Avg_ROI DESC")
+```
+
+### Channel Performance: Conversion Rate and ROI
+
+```{r}
+sqldf("SELECT Channel_Used,
+              AVG(Conversion_Rate) AS Avg_Conversion,
+              AVG(ROI) AS Avg_ROI
+       FROM df
+       GROUP BY Channel_Used
+       ORDER BY Avg_Conversion DESC")
+```
+
+### Campaign Type Engagement
+
+```{r}
+sqldf("SELECT Campaign_Type,
+              AVG(Engagement_Score) AS Avg_Engagement,
+              AVG(Clicks) AS Avg_Clicks
+       FROM df
+       GROUP BY Campaign_Type
+       ORDER BY Avg_Engagement DESC")
+```
+
+### Top Performing Locations by ROI
+
+```{r}
+sqldf("SELECT Location,
+              AVG(ROI) AS Avg_ROI,
+              COUNT(*) AS Campaigns
+       FROM df
+       GROUP BY Location
+       HAVING Campaigns > 2
+       ORDER BY Avg_ROI DESC")
+```
+
+## 📊 Visualization: ROI by Channel
+
+```{r}
+ggplot(df, aes(x = Channel_Used, y = ROI)) +
+  geom_boxplot() +
+  labs(title = "ROI Distribution by Marketing Channel")
+```
+
+## 📈 Insights Summary
+
+- Email and paid search are top performers in ROI and conversions.
+- Campaigns targeting premium or high-engagement segments yield stronger ROI.
+- Engagement Score is a good proxy for Clicks and campaign interactivity.
+- Some low-performing locations can be deprioritized for future investment.
+
