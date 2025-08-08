@@ -36,10 +36,20 @@ This project uses a marketing campaign dataset to explore performance metrics us
 
 ## Insights Generated
 
-- Channels like email and paid search show stronger ROI.
-- Certain segments consistently yield higher engagement.
-- Interactive filtering lets users drill into campaign trends.
-- Some low-performing locations can be deprioritized for future investment.
+
+- Foodies and Outdoor Adventurers respond best to marketing campaigns, yielding the highest average ROI. In contrast, Tech Enthusiasts underperform, indicating a potential mismatch in messaging or targeting.
+- Facebook and Website channels yielded the highest ROI, while Instagram drove the strongest conversion rates. Email and Google Ads performed solidly but were not the top channels.
+- Search campaigns drive the most engagement. Influencer campaigns underperform.
+- Houston and Chicago are the most profitable cities for campaigns, with significantly higher ROI. Meanwhile, Los Angeles and New York underperform, suggesting they may be oversaturated or misaligned with current strategies.
+- Google Ads offers more predictable ROI, while YouTube has higher peaks but possibly more variance. Choose based on risk appetite and budget flexibility.
+- ROI Distribution by Channel (Boxplot Insight)
+Looking at the spread of ROI for each channel (not just averages), here's what stands out:
+
+YouTube shows high maximum ROI values (e.g., 7.18), indicating strong upside.
+
+Google Ads has more consistent ROI across campaigns, with tighter distribution.
+
+Some channels (like Email or Social) may have high variance — meaning they’re riskier bets: some campaigns win big, others flop.
 
 ## Author
 
