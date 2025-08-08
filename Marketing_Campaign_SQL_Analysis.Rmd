@@ -10,7 +10,7 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## 📁 Load Libraries and Data
+## Load Libraries and Data
 
 ```{r}
 # Install required packages if not installed
@@ -29,14 +29,14 @@ df <- read.csv("marketing_campaign_dataset revised.csv", stringsAsFactors = FALS
 df$Date <- as.Date(df$Date)
 ```
 
-## 🔍 Data Structure
+## Data Structure
 
 ```{r}
 str(df)
 summary(df)
 ```
 
-## 🧠 SQL Analysis
+## SQL Analysis
 
 ### ROI by Customer Segment
 
@@ -83,7 +83,7 @@ sqldf("SELECT Location,
        ORDER BY Avg_ROI DESC")
 ```
 
-## 📊 Visualization: ROI by Channel
+## Visualization: ROI by Channel
 
 ```{r}
 ggplot(df, aes(x = Channel_Used, y = ROI)) +
@@ -91,7 +91,7 @@ ggplot(df, aes(x = Channel_Used, y = ROI)) +
   labs(title = "ROI Distribution by Marketing Channel")
 ```
 
-## 📈 Insights Summary
+## Insights Summary
 
 - Email and paid search are top performers in ROI and conversions.
 - Campaigns targeting premium or high-engagement segments yield stronger ROI.
