@@ -3,26 +3,26 @@
 
 This project uses a marketing campaign dataset to explore performance metrics using **R**, **SQL-like queries (via `sqldf`)**, and interactive **Shiny dashboards**.
 
-## 📁 Files Included
+## Files Included
 
 - `Marketing_Campaign_SQL_Analysis.Rmd`: An RMarkdown file for SQL-based exploratory analysis.
 - `app.R`: A Shiny dashboard app with filters for segment and channel.
 
-## 🔍 Key Analyses
+## Key Analyses
 
 - ROI by Customer Segment
 - Conversion & ROI by Channel
 - Engagement by Campaign Type
 - Dynamic filtering via sidebar controls in Shiny
 
-## 📦 Libraries Used
+## Libraries Used
 
 - `sqldf`
 - `ggplot2`
 - `dplyr`
 - `shiny`
 
-## 🚀 How to Run
+## How to Run
 
 ### RMarkdown Report
 
@@ -34,12 +34,12 @@ This project uses a marketing campaign dataset to explore performance metrics us
 1. Open `app.R` in RStudio.
 2. Click "Run App" (or use `shiny::runApp()`).
 
-## 🧠 Insights Generated
+## Insights Generated
 
 - Channels like email and paid search show stronger ROI.
 - Certain segments consistently yield higher engagement.
 - Interactive filtering lets users drill into campaign trends.
 
-## 📌 Author
+## Author
 
-Built by [Your Name] — [your website or LinkedIn]
+Built by Brittany McGregor — https://www.linkedin.com/in/brittany-mcgregor-39a90a124/
