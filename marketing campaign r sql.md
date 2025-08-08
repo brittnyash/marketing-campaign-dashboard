@@ -1,5 +1,5 @@
 
-# 📊 Marketing Campaign Dashboard (R + SQL + Shiny)
+# Marketing Campaign Dashboard (R + SQL + Shiny)
 
 This project uses a marketing campaign dataset to explore performance metrics using **R**, **SQL-like queries (via `sqldf`)**, and interactive **Shiny dashboards**.
 
