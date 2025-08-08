@@ -39,6 +39,7 @@ This project uses a marketing campaign dataset to explore performance metrics us
 - Channels like email and paid search show stronger ROI.
 - Certain segments consistently yield higher engagement.
 - Interactive filtering lets users drill into campaign trends.
+- Some low-performing locations can be deprioritized for future investment.
 
 ## Author
 
