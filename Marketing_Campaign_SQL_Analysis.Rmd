@@ -94,21 +94,16 @@ ggplot(df, aes(x = Channel_Used, y = ROI)) +
 ## Insights Generated
 
 
-- Foodies and Outdoor Adventurers respond best to marketing campaigns, yielding the highest average ROI. In contrast, Tech Enthusiasts underperform, indicating a potential mismatch in messaging or targeting.
-- Facebook and Website channels yielded the highest ROI, while Instagram drove the strongest conversion rates. Email and Google Ads performed solidly but were not the top channels.
-- Search campaigns drive the most engagement. Influencer campaigns underperform.
-- Houston and Chicago are the most profitable cities for campaigns, with significantly higher ROI. Meanwhile, Los Angeles and New York underperform, suggesting they may be oversaturated or misaligned with current strategies.
-- Google Ads offers more predictable ROI, while YouTube has higher peaks but possibly more variance. Choose based on risk appetite and budget flexibility.
-- ROI Distribution by Channel (Boxplot Insight)
-Looking at the spread of ROI for each channel (not just averages), here's what stands out:
+- Foodies and Outdoor Adventurers respond best to marketing campaigns, yielding the highest average ROI. In contrast, Tech Enthusiasts underperform, indicating a potential mismatch in messaging or targeting.These segments could be cheaper to reach in digital ad platforms compared to more competitive audiences like Tech Enthusiasts.
+- Facebook and Youtube channels yielded the highest ROI, while Instagram drove the strongest conversion rates. Long form content such as youtube allows for richer storytelling and stronger brand recall, potentially leading to higher-value purchases.
+- Search campaigns drive the most engagement. Influencer campaigns underperform. Engagement can be inflated by likes and comments that don’t translate into conversions. Also, ROI suffers if influencers’ audiences aren’t perfectly aligned with the target buyer.
+- Houston and Chicago are the most profitable cities for campaigns, with significantly higher ROI. Meanwhile, Los Angeles underperforms even with the same amount of campaigns as top performers. This may show proof of misalignment in LA budget, whereas LA may have more competitive ad markets, with higher CPC or CPM.
+- ROI Distribution by Channel (Boxplot Insight): YouTube shows high maximum ROI values, while Google Ads has more consistent ROI across campaigns and with tighter distribution.
 
-YouTube shows high maximum ROI values (e.g., 7.18), indicating strong upside.
 
-Google Ads has more consistent ROI across campaigns, with tighter distribution.
 
-Some channels (like Email or Social) may have high variance — meaning they’re riskier bets: some campaigns win big, others flop.
 
-## Author
 
 Built by Brittany McGregor — https://www.linkedin.com/in/brittany-mcgregor-39a90a124/
+
 
