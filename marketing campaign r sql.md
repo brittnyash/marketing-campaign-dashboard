@@ -3,13 +3,13 @@
 
 This project uses a marketing campaign dataset to explore performance metrics using **R**, **SQL-like queries (via `sqldf`)**, and interactive **Shiny dashboards**. I sourced a marketing campaign dataset from Kaggle that included detailed metrics such as campaign type, marketing channel, customer segment, location, ROI, conversion rate, and engagement. I downloaded it as a CSV and organized it into a structured project folder with separate directories. After importing the dataset into R, I inspected it with str(), summary(), and head() to verify column types, check for missing values, and identify potential anomalies. 
 
-Extract, Transform, Load
+## Extract, Transform, Load
 I then cleaned and transformed the data by converting date fields to the correct format. I removed rows with missing critical metrics and assessed outliers using boxplots. With a clean dataset, I used sqldf in R to run SQL-style queries that analyzed ROI by customer segment, engagement by campaign type, top-performing locations by ROI, and channel performance. 
 
-Shiny App
+## Shiny App
 Finally, I built an interactive Shiny dashboard (app.R) that allows users to filter by customer segment and channel, with dynamic visualizations for ROI by segment, channel performance, and campaign engagement. Throughout the process, I validated the work by tracking row counts before and after cleaning, checking for duplicates, confirming metric ranges, and cross-verifying SQL outputs with dplyr summaries. The project concluded with actionable marketing recommendations based on the analysis, linking data insights directly to strategic opportunities.
 
-Insights
+## Insights
 The dataset revealed that Foodies and Outdoor Adventurers delivered the highest ROI, search campaigns drove the most engagement, Houston and Chicago were the most profitable locations, and Facebook and YouTube were the strongest ROI channels while Instagram led in conversion rate. I visualized these findings using ggplot2 through boxplots, stacked bar charts, and categorical comparisons.
 
 
